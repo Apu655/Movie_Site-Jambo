@@ -8,14 +8,11 @@ function Thumbnail({result}:any){
     return(
         <Link href={`movies/${result.id}`}>
         <a className=' group transition-all hover:scale-[1.05] hover:shadow-md mx-12 my-14 cursor-pointer hover:text-white transform hover:z-30 ease-in duration-200'>
-            <Image className='lg:mx-0 mx-4' 
-            layout='responsive'
-            height={400}
-            width={400}
+            <img className='lg:mx-0 mx-4' 
             src={`${BASE_URL}${result.path || result.poster_path}`}
             
 
-            ></Image>
+            ></img>
             <div className='p-2'>
                 <p className='truncate max-w-md'>{result.overview}</p>
                 <h2 className='font-semibold text-3xl group-hover:font-bold'>
