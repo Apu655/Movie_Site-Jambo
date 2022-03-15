@@ -46,7 +46,7 @@ function Movie({result,trailer}:any){
 
                 <h2 className='text-5xl font-semibold border-b-2 py-3'>{trailer.name}</h2>
             <div className='mt-10'>
-            <iframe className='mx-auto h-[500px] w-full'  src={`https://www.youtube.com/embed/${movie_key}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe className='mx-auto h-[500px] w-full'  src={`https://www.youtube.com/embed/${movie_key}`} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
             </div>
         </div>
