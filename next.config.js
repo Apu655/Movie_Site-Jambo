@@ -6,10 +6,18 @@
   },
 }
 
-module.exports = nextConfig*/
+module.exports = nextConfig
 module.exports = {
   images: {
       domains: ['image.tmdb.org.'],
   },
-}
+}*/
+
+module.exports = {
+  reactStrictMode: true,
+  images: {
+      domains: ["image.tmdb.org."],
+      formats: ["image/webp"],
+  },
+};
 
