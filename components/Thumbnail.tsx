@@ -3,6 +3,7 @@ import {ThumbUpIcon} from '@heroicons/react/outline'
 import {useRouter} from 'next/router'
 import Link from "next/link"
 function Thumbnail({result}:any){
+    
     const BASE_URL:string = 'https://image.tmdb.org./t/p/original/'
     const route = useRouter()
     return(
@@ -10,7 +11,7 @@ function Thumbnail({result}:any){
         <a className='group transition-all hover:scale-[1.05] hover:shadow-md mx-12 my-14 cursor-pointer hover:text-white transform hover:z-30 ease-in duration-200'>
             <Image 
             layout='responsive'
-            src={`${BASE_URL}${result.path || result.poster_path}`}
+            src='https://image.tmdb.org./t/p/original/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg'
             height={400}
             width={400}
 
