@@ -1,6 +1,5 @@
 import Image from "next/image"
 import {ThumbUpIcon} from '@heroicons/react/outline'
-import Link from "next/link"
 
 function Movie({result,trailer}:any){
     const BASE_URL:string = 'https://image.tmdb.org./t/p/original/'
