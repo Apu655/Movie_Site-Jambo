@@ -9,14 +9,14 @@ function Movie({result,trailer}:any){
 
     return(
         <div className='flex flex-col mx-12 lg:max-w-6xl lg:mx-auto my-14 md:grid md:grid-cols-2 gap-x-[100px] text-white'>
-            <Image className=''
-            layout='responsive'
+            <img className=''
+            
             src={`${BASE_URL}${result.path || result.poster_path||'None'}`}
             height={500}
             width={500}
 
-            >
-            </Image>
+            />
+            
             <div className=''>
                 
                 <h2 className='font-black text-white text-6xl group-hover:font-bold'>
